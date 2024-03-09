@@ -33,10 +33,10 @@ class Solution
     public char nthCharacter(String s, int r, int n)
     {
         char[] chars = s.toCharArray();
-
+        
         for (int i = 0; i < r; i++) {
-            char[] newChars = new char[s.length() * 2];
-
+            
+                  char[] newChars = new char[s.length() * 2];
             for (int j = 0; j < s.length(); j++) {
                 if (chars[j] == '1') {
                     newChars[2 * j] = '1';
